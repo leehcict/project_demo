@@ -1,0 +1,43 @@
+.navbar-nav >li {
+    position: relative;
+    display: block;
+}
+.menu_main .navbar-nav > li.active > a:after {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    -ms-transform: translateX(-50%) scaleX(1);
+    -o-transform: translateX(-50%) scaleX(1);
+    /* transform: translateX(-50%) scaleX(1); */
+}
+
+.menu_main .navbar-nav > li > a:after {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition-property: -webkit-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -ms-transform: translateX(-50%) scaleX(0);
+    -o-transform: translateX(-50%) scaleX(0);
+    transform: translateX(-50%) scaleX(0);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    content: "";
+    width: 90%;
+    height: 4px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: #1080f2;
+}
+
+
+.menu_main .navbar-nav > li > a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    color: rgba(255, 255, 255, 0.5);
+}
