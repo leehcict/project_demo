@@ -1,0 +1,15 @@
+{
+  "name": "puppet-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose true"
+  },
+  "author": "chungle",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^22.1.4",
+    "puppeteer": "^1.0.0"
+  }
+}
